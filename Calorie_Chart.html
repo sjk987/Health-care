@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Calorie Chart
+</title>
+    <style type="text/css">
+        h1{
+            font-family:Times New Roman;
+            color:brown;
+        }
+        #tbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl td, #tbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #dddddd;}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: 	#00008B;
+    color: white;
+}  
+        
+        #hd{
+            background-color:cornflowerblue;
+        }
+    </style>
+    <script>
+        function cal(){
+            
+            if(this.checkOn){
+                sum+=parseInt(getElementByClass('chkbx').value);
+                console.log(sum);
+            }
+        }
+        function cal1(){
+            sum = 0
+            var item1 = document.getElementById("item1").checked;
+            var item2 = document.getElementById("item2").checked;
+            var item3 = document.getElementById("item3").checked;
+            var item4 = document.getElementById("item4").checked;
+            var item5 = document.getElementById("item5").checked;
+            var item6 = document.getElementById("item6").checked;
+            var item7 = document.getElementById("item7").checked;
+            var item8 = document.getElementById("item8").checked;
+            var item9 = document.getElementById("item9").checked;
+            var item10 = document.getElementById("item10").checked;
+            var item11 = document.getElementById("item11").checked;
+            var item12 = document.getElementById("item12").checked;
+            var item13 = document.getElementById("item13").checked;
+            var item14 = document.getElementById("item14").checked;
+            var item15 = document.getElementById("item15").checked;
+            var item16 = document.getElementById("item16").checked;
+            
+            if(item1){sum +=parseInt(document.getElementById("item1").value)}
+            if(item2){sum +=parseInt(document.getElementById("item2").value)}
+            if(item3){sum +=parseInt(document.getElementById("item3").value)}
+            if(item4){sum +=parseInt(document.getElementById("item4").value)}
+            if(item5){sum +=parseInt(document.getElementById("item5").value)}
+            if(item6){sum +=parseInt(document.getElementById("item6").value)}
+            if(item7){sum +=parseInt(document.getElementById("item7").value)}
+            if(item8){sum +=parseInt(document.getElementById("item8").value)}
+            if(item9){sum +=parseInt(document.getElementById("item9").value)}
+            if(item10){sum +=parseInt(document.getElementById("item10").value)}
+            if(item11){sum +=parseInt(document.getElementById("item11").value)}
+            if(item12){sum +=parseInt(document.getElementById("item12").value)}
+            if(item13){sum +=parseInt(document.getElementById("item13").value)}
+            if(item14){sum +=parseInt(document.getElementById("item14").value)}
+            if(item15){sum +=parseInt(document.getElementById("item15").value)}
+            if(item16){sum +=parseInt(document.getElementById("item16").value)}
+            
+            console.log(item1);
+            window.alert("Total calorie intake="+(sum).toString());
+            
+            
+        }
+    </script>
+        
+</head>
+<body>
+    <h1><center><u>Food Calorie Chart</u></center></h1>
+<table id="tbl" border=1>
+    <tr>
+        <th></th>
+        <th>Food Categories</th>
+        <th>Measure</th>
+        <th>Calorie</th>
+    </tr>
+    
+    <tr>
+        <td colspan="4" id="hd">MILK PRODUCTS</td>
+    </tr>
+    
+    <tr>
+        <td><input type="checkbox" id="item1" class="chkbx" value=150 onclick=cal() /></td>
+        <td>Whole Milk</td>
+        <td>225 ml(1 cup)</td>
+        <td>150</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item2" class="chkbx" value=150 onclick=cal() /></td>
+        <td>Paneer (Whole Milk)</td>
+        <td>60 gms</td>
+        <td>150</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item3" class="chkbx" value=45 onclick=cal() /></td>
+        <td>Butter</td>
+        <td>1 tbsp</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item4" class="chkbx" value=45 onclick()=cal() /></td>   
+        <td>Ghee</td>
+        <td>1 tbsp</td>
+        <td>45</td>
+    </tr>
+    
+    <tr>
+        <td colspan="4" id="hd">FRUITS</td>
+    </tr>
+    
+    <tr>
+        <td><input type="checkbox" id="item5" class="chkbx" value=45 onclick()=cal() /></td>   
+        <td>Apple</td>
+        <td>1 small</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item6" class="chkbx" value=50 onclick()=cal() /></td>   
+        <td>Banana</td>
+        <td>1/2 medium</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item7" class="chkbx" value=45 onclick()=cal() /></td>   
+        <td>Grapes</td>
+        <td>15 small</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item8" class="chkbx" value=45 onclick()=cal() /></td>   
+        <td>Apple</td>
+        <td>1 small</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item9" class="chkbx" value=50 onclick()=cal() /></td>   
+        <td>Mango</td>
+        <td>1/2 small</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item10" class="chkbx" value=55 onclick()=cal() /></td>   
+        <td>Mausambi</td>
+        <td>1 medium</td>
+        <td>55</td>
+    </tr>
+    
+    <tr>
+        <td colspan="4" id="hd">CEREALS</td>
+    <tr>
+    
+    <tr>
+        <td><input type="checkbox" id="item11" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Cooked Cereal</td>
+        <td>1/2 cup</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item12" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Rice Cooked</td>
+        <td>25 gms</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item13" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Chapati</td>
+        <td>1 medium</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>STARCHY VEGETABLES</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item14" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Potato</td>
+        <td>1 medium</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item15" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Dal</td>
+        <td>1 large katori</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" id="item16" class="chkbx" value=80 onclick()=cal() /></td>   
+        <td>Mixed Vegetables</td>
+        <td>150gm</td>
+        <td>80</td>
+    </tr>
+</table>
+    <br><br><br>
+    <h5>Click the button to Calculate Calorie Intake</h5>
+    <input id='in1' type="button" value="Calulate" onclick="cal1()" >
+</body>
+</html>
+

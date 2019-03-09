@@ -1,0 +1,7 @@
+<script src="editor/ckeditor.js"></script> 
+<textarea name="editor" id="editor" class="form-control"></textarea>
+<script> CKEDITOR.replace( 'editor' );  </script>
+
+
+
+//<?php $text=addslashes($_POST['editor']) ?>

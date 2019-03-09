@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	src:url(../fonts/Quikhand.ttf);
+	src:url(../fonts/Devonshire-Regular.ttf);
+	src:url(../fonts/Pacifico.ttf);
+	src:url(../fonts/Denka-Demo.ttf);
+	src:url(../fonts/Zilap-Black-Storm.ttf);
+	src:url(../fonts/Satisfy-Regular.ttf);
+	src:url(../fonts/Cassande-Personal.ttf);
+	src:url(../fonts/CherryCreamSoda.ttf);
+	src:url(../../../Users/dell/Downloads/kaushan-script/KaushanScript-Regular.otf);
+	font-family:'KaushanScript-Regular';
+	font-family:'Devonshire-Regular';
+	font-family:'Quikhand';
+	font-family:'Pacifico';
+    font-family:'Denka-Demo';
+	font-family:'Zilap-Black-Storm';
+		font-family:'Satisfy-Regular';
+			font-family:'Cassande-Personal';
+			font-family:'CherryCreamSoda';
+
+}
+p
+{
+		font-family:'KaushanScript-Regular';
+}

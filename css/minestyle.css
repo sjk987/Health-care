@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	src:url(../fonts/Quikhand.ttf);
+	src:url(../fonts/Devonshire-Regular.ttf);
+	src:url(../fonts/Pacifico.ttf);
+	src:url(../fonts/Denka-Demo.ttf);
+	src:url(../fonts/Zilap-Black-Storm.ttf);
+	src:url(../fonts/Satisfy-Regular.ttf);
+	src:url(../fonts/Cassande-Personal.ttf);
+	src:url(../fonts/CherryCreamSoda.ttf);
+	src:url(../../../Users/dell/Downloads/kaushan-script/KaushanScript-Regular.otf);
+	font-family:'KaushanScript-Regular';
+	font-family:'Devonshire-Regular';
+	font-family:'Quikhand';
+	font-family:'Pacifico';
+    font-family:'Denka-Demo';
+	font-family:'Zilap-Black-Storm';
+		font-family:'Satisfy-Regular';
+			font-family:'Cassande-Personal';
+			font-family:'CherryCreamSoda';
+
+}
+.row{
+	padding:10px;
+}
+a{
+	border:thin #FFF 4px;
+	border-radius:2px;
+
+}
+ul
+{
+	float:center;
+}
+lead
+{
+		font-family:'KaushanScript-Regular';
+		margin:6px;
+		font-size:20px;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+}
+
+/* Navbar links */
+.navbar a {
+  text-align: center;
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}

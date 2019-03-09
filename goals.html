@@ -1,0 +1,47 @@
+<html>
+    <HEAD>
+    <title>DAILY EXERCISES</title>
+    <body>
+        <H1 ALIGN="CENTER"><FONT COLOR="RED">SET GOALS OF THE DAY </FONT></H1>
+        
+ <div class="row">
+    <div class="col-sm-6">
+        <div class="form-group required">
+            
+            <div class="col-sm-4 buttonwrapper">
+                <input id='text_box' type="text" class="form-control" id="PickList_Options" name="PickList_Options" value='' />
+                <button type='button' id='search_button' onclick='doSearch()'>
+                    SET</button>
+            </div>
+            <p id='output'></p>
+            <ul id='output_ul'></ul>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="result" id="mydiv"></div>
+    </div>
+</div>
+    
+   <div class="boxed">
+<img src=  "{{ url_for('static',filename='img/ca1.jpg')}}" style="float:right;" alt="arts" class="center" />
+    <br/><br/><h3><b>Management</b></h3>
+    <br/><br/>
+<p></p>
+</div>
+
+        
+   </body>
+        
+        <script>
+            function doSearch() {
+                var output_list = []; 
+                var input = document.getElementById('text_box').value;
+                output_list.push(input);
+                
+                for (var i = 0; i < output_list.length; ++i) {
+                    console.log(output_list[i]);
+                    document.getElementById('output_ul').innerHTML += '<input type=checkbox value='+i+' >' + output_list[i]+'<br>';
+                }
+            }
+        </script>
+        
